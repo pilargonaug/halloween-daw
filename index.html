@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Scary Halloween Party</title>
+    <link href="https://fonts.googleapis.com/css?family=Butcherman&display=swap" rel="stylesheet">
+    <!-- this document is NOT RESPONSIVE only can be seen in a PC monitor -->
+    <link href="estilos/halloween.css" rel="stylesheet">
+    <script src="javascripts/halloween.js"></script>
+</head>
+<body>
+          <audio id="demonGirls" autoplay>
+            <source src="sonidos/demonGirls.mp3" type="audio/mpeg">
+          </audio>
+  <div id="wrapper">
+   <h1>Scary Halloween Party</h1>
+   <p id="p1">Are you ready to meet evil?</p>
+   <div id="ventana" onclick="mostrar('zombie');sonar('demonGirls')"></div><!-- para definir un área activable-->
+   <p id="p2">Don´t knock at the tower window!!!!</p>
+   <img id="zombie" src="imagenes/zombie.gif" ondblclick="ocultar('zombie');pausar('demonGirls')">
+  </div>
+</body>
+</html>
